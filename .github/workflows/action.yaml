@@ -1,0 +1,11 @@
+name: First Github Actions
+run-name: ${{ github.actor }} is testing GH Actions 🚀
+on: push
+jobs:
+  initial:
+    runs-on: self-hosted
+    steps:
+      - name: print something
+        run: |
+          echo "Hello from 1st GHA"
+          echo $HOSTNAME
